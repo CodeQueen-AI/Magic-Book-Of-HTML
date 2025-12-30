@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- Simple Form -->
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    </form>
+
+    <!-- TextArea -->
+    <textarea name="message" rows="10" cols="30">
+        The cat was playing in the garden
+    </textarea>
+
+    <!-- File Upload -->
+    <form>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile">
+    </form>
+
+    <!-- Color Picker -->
+    <form>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+    </form>
+
+    <!-- Date Input -->
+    <form>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+    </form>
+
+    <!-- Number Input -->
+    <form>
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+    </form>
+
+    <!-- Datalist -->
+    <form>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+
+    <!-- Checkbox -->
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a Pen</label><br>
+
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a Book</label><br>
+
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have Colors</label>
+    </form>
+
+    <!-- Radio Button -->
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JS</label>
+    </form>
+
+    <!-- Button -->
+    <button type="button" onclick="alert('Welcome To Programming World!')">Click Me!</button>
+
+    <!-- Select -->
+    <label for="colors">Choose a Favourite Color:</label>
+    <select id="colors" name="colors">
+        <option value="Red">Red</option>
+        <option value="Green">Green</option>
+        <option value="Pink">Pink</option>
+        <option value="Blue">Blue</option>
+    </select>
+
+</body>
+</html>
